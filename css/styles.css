@@ -1,0 +1,37 @@
+body {
+    background: #FFFFFF;
+}
+/* Button */
+.btn {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-flex;
+}
+
+/* image layout */
+   
+img {
+    display: block;
+}
+
+/* image content */
+.img-content {
+    flex-direction: column;
+    border: 1px solid #EEEEEE;
+}
+
+
+.img-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
