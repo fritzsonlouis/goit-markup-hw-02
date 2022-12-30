@@ -5,6 +5,31 @@ body {
     text-align: center;
 }
 
+
+/* Navbar */
+
+
+/* LOGO */
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    color: #2196F3;
+}
+
+/* Bottom Navigation */
+
+footer :active {
+    color: none;
+}
+
+footer {
+    background: #2f303a;
+}
+
+address {
+    color: #FFFFFF;
+}
+
 /* h2 & p tag */
 
 h2 {
