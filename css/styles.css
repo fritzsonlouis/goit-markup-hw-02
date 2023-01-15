@@ -18,6 +18,8 @@ body {
 /* Header hover and focus*/
 .nav-list-link:hover,
 .nav-list-link:focus,
+.atag:hover,
+.atag:focus,
 .header-address-mail:hover,
 .header-address-mail:focus,
 .header-address-phone:hover,
@@ -116,10 +118,7 @@ footer,
     color: var(--color-logo);
 }
 
-.nav-list-link-studio,
-.nav-list-link-portfolio {
-    
-}
+
 
 /* Heading & Paragraph 
     default font-weight: 400;
