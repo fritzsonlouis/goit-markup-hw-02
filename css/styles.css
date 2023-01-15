@@ -6,8 +6,7 @@
     --footer-bg-color: #2F303A;
     --paragraph-color1: #757575;
     --footer-address-color: #fff;
-    --footer-address-color: rgba(255, 255, 255, 0.6);
-
+    --footer-address-color2: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -16,59 +15,110 @@ body {
     color: var(--secondary-active-color);
 }
 
-/* Header/Footer hover and focus*/
-header:hover, 
-footer:hover,
-    header:focus, 
-    footer:focus{
-        color: var(--color-logo);
+/* Header hover and focus*/
+.nav-list-link:hover,
+.nav-list-link:focus,
+.header-address-mail:hover,
+.header-address-mail:focus,
+.header-address-phone:hover,
+.header-address-phone:focus,
+.hero-btn:hover,
+.hero-btn:focus,
+.footer-address > a:hover, 
+.footer-address > a:focus,
+.tel-mail > a:focus,
+.tel-mail > a:hover {
+  color: var(--color-logo);
+}
+
+/*Button hover and focus */
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--color-logo);
+    color: var(--main-bg-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.hero-btn:hover,
+.hero-btn:focus{
+    color: var(--footer-bg-color);
+}
+
+/* Buttons */
+
+.btn,
+.hero-btn{
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn {
+    font-weight: 500;
+    line-height: 1.625;
+    background: var(--button-color);
+    color: var(--secondary-active-color);
 }
 
 /* Logo */
 
 .logo {
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.192;
+    text-decoration: none;
     color: var(--color-logo);
 }
 
-.port-page, .studio-page {
-    color: var(--color-logo);
+
+.header-address-list-item {
+    color: var(--paragraph-color1);
 }
 
-.navbar {
+
+.nav-list-link,
+.header-address-mail,
+.header-address-phone  {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.142;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
-.header-address {
-    color: var(--paragraph-color1);
+.header-address-phone,
+.header-address-mail{
+    color: #757575;
 }
 
 ul {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Letter-spacing */
 .btn, 
 .logo, 
 footer, 
-p {
+.hero-third-header,
+.ptag {
     letter-spacing: 0.03em;
 }
 
-/* Buttons */
+/* Curent page Navigation link color */
 
-.btn {
-    font-weight: 500;
-    line-height: 1.625;
-    background-color: var(--button-color);
-    color: var(--secondary-active-color);
-    cursor: pointer;
+.nav-list-link-span {
+    color: var(--color-logo);
+}
+
+.nav-list-link-studio,
+.nav-list-link-portfolio {
+    
 }
 
 /* Heading & Paragraph 
@@ -77,25 +127,85 @@ p {
     default font-style: normal;
 */
 
-h2 {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
+.hero-up-side-bg {
+    background-color: var(--footer-bg-color);
+}
+
+.hero-main-header{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.363;
+    color: var(--main-bg-color);
+}
+
+.hero-main-header,
+.hero-third-header {
+    text-transform: uppercase;
+}
+
+.hero-main-header,
+.portfolio-img-header-name,
+.hero-btn{
     letter-spacing: 0.06em;
 }
 
-p {
-    line-height: 1.875; 
-    letter-spacing: 0.03em;
+.img-header,
+.hero-btn {
+    font-weight: 700;
+}
+
+.hero-btn {
+    color: var(--main-bg-color);
+    background-color: var(--color-logo);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.hero-third-header {
+    font-size: 14px;
+    line-height: 1.142;
+}
+
+.portfolio-img-header-name {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.ptag {
     color: var(--paragraph-color1);
+}
+
+.port-ptag,
+.hero-btn
+ {
+    line-height: 1.875; 
+}
+
+.ourteam-ptag {
+    line-height: 1.187;
+}
+
+.hero-description {
+    font-size: 14;
+    line-height: 1.714;
 }
 
 /* Footer */
 
-.footer-address {
-    color: var(--footer-address-color);
+.footer {
+    background-color: var(--footer-bg-color);
 }
 
-.tel-mail {
-    color: var(--footer-address-color);
+.footer-address > a,
+.tel-mail > a {
+    font-style: normal;
 }
+
+.footer-address > a{
+    color: var(--footer-address-color)
+}
+
+.tel-mail > a{
+    color: var(--footer-address-color2);
+    text-decoration: none;
+} 
