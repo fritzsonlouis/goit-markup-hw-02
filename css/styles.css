@@ -56,11 +56,15 @@ body {
     cursor: pointer;
 }
 
+.btn, .hero-btn{
+    font-family: 'Roboto', sans-serif;
+}
+
 .btn {
     font-weight: 500;
     line-height: 1.625;
     background: var(--button-color);
-    color: var(--secondary-active-color);
+    color: var(--secondary-active-color)
 }
 
 /* Logo */
@@ -168,6 +172,10 @@ footer,
 .portfolio-img-header-name {
     font-size: 18px;
     line-height: 2;
+}
+
+.ourteam-bg {
+    background-color: var(--button-color);
 }
 
 .ptag {
