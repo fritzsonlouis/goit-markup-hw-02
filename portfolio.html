@@ -10,13 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--Header-->
     <header class="header">
         <!-- Navigation -->
-        <nav class="navbar">
+        <nav class="nav">
             <a class="logo" href="./index.html">WebStudio</a>
             <ul class="nav-list">
                 <li class="nav-list-item">
-                    <a class="atag" href="./index.html">Studio</a>
+                    <a class="nav-list-link" href="./index.html">Studio</a>
                 </li>
                 <li class="nav-list-item">
                     <a class="nav-list-link" href="./portfolio.html"><span
@@ -27,69 +28,74 @@
                 </li>
             </ul>
         </nav>
-                <ul class="header-address">
-                    <li class="header-address-list-item">
-                        <a class="header-address-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    </li>
-                    <li class="header-address-list-item">
-                        <a class="header-address-phone" href="tel:+12127724150">+1 212-772-4150</a>
-                    </li>
-                </ul>
+        <ul class="header-address-list">
+            <li class="header-address-list-item">
+                <a class="header-address-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="header-address-list-item">
+                <a class="header-address-phone" href="tel:+12127724150">+1 212-772-4150</a>
+            </li>
+        </ul>
     </header>
+
+    <!--Main content-->
     <main>
-        <div>
-            <ul>
-                <li><button class="btn" type="button">All</button></li>
-                <li><button class="btn" type="button">Web-sites</button></li>
-                <li><button class="btn" type="button">Apps</button></li>
-                <li><button class="btn" type="button">Design</button></li>
-                <li><button class="btn" type="button">Marketing</button></li>
+        <div class="portfolio-filter">
+            <ul class="filter-btn-list">
+                <li class="filter-btn-items"><button class="btn" type="button">All</button></li>
+                <li class="filter-btn-items"><button class="btn" type="button">Web-sites</button></li>
+                <li class="filter-btn-items"><button class="btn" type="button">Apps</button></li>
+                <li class="filter-btn-items"><button class="btn" type="button">Design</button></li>
+                <li class="filter-btn-items"><button class="btn" type="button">Marketing</button></li>
             </ul>
         </div>
             
-    <section class="portfolio">
+    <section class="portfolio-section">
         <ul class="portfolio-list">
-            <li class="portfolio-list-item"><img src="img/portfolio-img1.jpg" alt="Laptop" width="370">
-                <h2 class="img-headerportfolio-img-header-name">Technoduck</h2>
-                <p class="ptag port-ptag">Web-site</p></li>
-            <li class="portfolio-list-item"><img src="img/portfolio-img2.jpg" alt="NBA Poster" width="370">
-                <h2 class="img-header portfolio-img-header-name">Poster New Orlean vs Golden Star</h2>
-                <p class="ptag port-ptag">Design</p></li>
-            <li class="portfolio-list-item"><img src="img/portfolio-img3.jpg" alt="Seafood Restaurant" width="370">
-                <h2 class="img-header portfolio-img-header-name">Seafood Restaurant</h2>
-                <p class="ptag port-ptag">Apps</p></li>
-            <li class="portfolio-list-item"><img src="img/portfolio-img4.jpg" alt="Headphone" width="370">
-                <h2 class="img-header portfolio-img-header-name">Project Prime</h2>
-                <p class="ptag port-ptag">Marketing</p></li>
-            <li class="portfolio-list-item"><img src="img/portfolio-img5.jpg" alt="Image of two boxes" width="370">
-                <h2 class="img-header portfolio-img-header-name">Project Boxes</h2>
-                <p class="ptag port-ptag">Apps</p></li>
-            <li class="portfolio-list-item"><img src="img/portfolio-img6.jpg" alt="Computer Monitor" width="370">
-                <h2 class="img-header portfolio-img-header-name">Inspiration has no Borders</h2>
-                <p class="ptag port-ptag">Web-site</p></li>
-            <li class="portfolio-list-item"><img src="img/portfolio-img7.jpg" alt="Open book called I am Limited Edition" width="370">
-                <h2 class="img-header portfolio-img-header-name">Limited Edition</h2>
-                <p class="ptag port-ptag">Design</p></li>
+            <li class="portfolio-list-item"><img class="portfolio-list-img" src="img/portfolio-img1.jpg" alt="Laptop" width="370">
+                <h2 class="portfolio-list-header">Technoduck</h2>
+                <p class="portfolio-list-description">Web-site</p></li>
+            <li class="portfolio-list-item"><img class="portfolio-list-img" src="img/portfolio-img2.jpg" alt="NBA Poster" width="370">
+                <h2 class="portfolio-list-header">Poster New Orlean vs Golden Star</h2>
+                <p class="portfolio-list-description">Design</p></li>
+            <li class="portfolio-list-item"><img class="portfolio-list-img" src="img/portfolio-img3.jpg" alt="Seafood Restaurant" width="370">
+                <h2 class="portfolio-list-header">Seafood Restaurant</h2>
+                <p class="portfolio-list-description">Apps</p></li>
+            <li class="portfolio-list-item"><img class="portfolio-list-img" src="img/portfolio-img4.jpg" alt="Headphone" width="370">
+                <h2 class="portfolio-list-header">Project Prime</h2>
+                <p class="portfolio-list-description">Marketing</p></li>
+            <li class="portfolio-list-item"><img class="portfolio-list-img" src="img/portfolio-img5.jpg" alt="Image of two boxes" width="370">
+                <h2 class="portfolio-list-header">Project Boxes</h2>
+                <p class="portfolio-list-description">Apps</p></li>
+            <li class="portfolio-list-item"><img class="portfolio-list-img" src="img/portfolio-img6.jpg" alt="Computer Monitor" width="370">
+                <h2 class="portfolio-list-header">Inspiration has no Borders</h2>
+                <p class="portfolio-list-description">Web-site</p></li>
+            <li class="portfolio-list-item"><img class="portfolio-list-img" src="img/portfolio-img7.jpg" alt="Open book called I am Limited Edition" width="370">
+                <h2 class="portfolio-list-header">Limited Edition</h2>
+                <p class="portfolio-list-description">Design</p></li>
             <li class="portfolio-list-item"><img class="portfolio-list-img" src="img/portfolio-img8.jpg" alt="Tag" width="370">
-                <h2 class="img-header portfolio-list-header">Project LAB</h2>
-                <p class="ptag port-ptag">Marketing</p></li>
-            <li class="portfolio-list-item"><img src="img/portfolio-img9.jpg" alt="Laptop" width="370">
-                <h2 class="img-header portfolio-img-header-name">Growing Business</h2>
-                <p class="ptag port-ptag">Apps</p></li>
+                <h2 class="portfolio-list-header">Project LAB</h2>
+                <p class="portfolio-list-description">Marketing</p></li>
+            <li class="portfolio-list-item"><img class="portfolio-list-img" src="img/portfolio-img9.jpg" alt="Laptop" width="370">
+                <h2 class="portfolio-list-header">Growing Business</h2>
+                <p class="portfolio-list-description">Apps</p></li>
         </ul>
     </section>        
     </main>
+
+    <!--Footer-->
     <footer class="footer">
         <a class="logo" href="./index.html">WebStudio</a>
-        <ul>
-            <li><address class="footer-address"><a href="https://goo.gl/maps/KjiPHwLMQQ97QbyQ7" target="_blank">695 Park, Ave, New York, NY 10065. <br>
+        <ul class="footer-list">
+            <li class="footer-list-item"><address class="footer-address"><a class="footer-address-map" href="https://goo.gl/maps/KjiPHwLMQQ97QbyQ7" target="_blank">695 Park, Ave, New York, NY 10065. <br>
             United States</a>
             </address></li>
-            <li class="tel-mail">
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="footer-list-item">
+                <a class="footer-address-mail"
+                href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li class="tel-mail">
-                <a href="tel:+12127724150">+1 212-772-4150</a>
+            <li class="footer-list-item">
+                <a class="footer-address-phone" href="tel:+12127724150">+1 212-772-4150</a>
             </li>
         </ul>
     </footer>
