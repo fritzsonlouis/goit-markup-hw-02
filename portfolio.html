@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -38,18 +37,19 @@
     </header>
 
     <!--Main content-->
-    <main>
-        <div class="portfolio-filter">
-            <ul class="filter-btn-list">
-                <li class="filter-btn-items"><button class="btn" type="button">All</button></li>
-                <li class="filter-btn-items"><button class="btn" type="button">Web-sites</button></li>
-                <li class="filter-btn-items"><button class="btn" type="button">Apps</button></li>
-                <li class="filter-btn-items"><button class="btn" type="button">Design</button></li>
-                <li class="filter-btn-items"><button class="btn" type="button">Marketing</button></li>
-            </ul>
-        </div>
-            
+    <main>  
     <section class="portfolio-section">
+        <!--Portfolio Button-->
+        <ul class="filter-btn-list">
+            <li class="filter-btn-items"><button class="btn" type="button">All</button></li>
+            <li class="filter-btn-items"><button class="btn" type="button">Web-sites</button></li>
+            <li class="filter-btn-items"><button class="btn" type="button">Apps</button></li>
+            <li class="filter-btn-items"><button class="btn" type="button">Design</button></li>
+            <li class="filter-btn-items"><button class="btn" type="button">Marketing</button></li>
+        </ul>
+
+        <!--Portfolio Main images and poster-->
+        
         <ul class="portfolio-list">
             <li class="portfolio-list-item"><img class="portfolio-list-img" src="img/portfolio-img1.jpg" alt="Laptop" width="370">
                 <h2 class="portfolio-list-header">Technoduck</h2>
@@ -85,18 +85,22 @@
     <!--Footer-->
     <footer class="contact">
         <a class="logo" href="./index.html">WebStudio</a>
-        <ul class="contact-list">
-            <li class="contact-list-item"><address class=""><a class="contact-list-item-map" href="https://goo.gl/maps/KjiPHwLMQQ97QbyQ7" target="_blank">695 Park, Ave, New York, NY 10065.
-            United States</a>
-            </address></li>
-            <li class="contact-list-item">
-                <a class="contact-list-item-card"
-                href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="contact-list-item">
-                <a class="contact-list-item-card" href="tel:+12127724150">+1 212-772-4150</a>
-            </li>
-        </ul>
+        <address>
+            <ul class="contact-list">
+                <li class="contact-list-item"><a class="contact-list-item-map" href="https://goo.gl/maps/KjiPHwLMQQ97QbyQ7" target="_blank">695 Park, Ave, New York, NY 10065.
+                United States</a>
+                </li>
+                <li class="contact-list-item">
+                    <a class="contact-list-item-card"
+                    href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="contact-list-item">
+                    <a class="contact-list-item-card" href="tel:+12127724150">+1 212-772-4150</a>
+                </li>
+            </ul>
+        </address>
     </footer>
+
 </body>
+
 </html>
